@@ -1,0 +1,19 @@
+{
+  "name": "blockchain98-processor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "protobufjs": "^6.8.8",
+    "sawtooth-sdk": "^1.0.5",
+    "secp256k1": "^4.0.0",
+    "winston": "^3.2.1",
+    "zeromq": "^5.2.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1",
+    "underscore": "^1.9.2"
+  }
+}
