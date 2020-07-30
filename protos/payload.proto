@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+message PGPayload {
+    string action = 100;
+
+    oneof options {
+    CreateAccountAction createaccount = 200;
+    SendPrescriptAction sendprescript = 201; 
+    }
+}
+
+
+
+message CreateAccountAction {
+    string label = 1;
+}
+
+message SendPrescriptAction {
+    string index = 1;         
+    string hash = 2;
+    string patPublicKey = 3;
+    string docPublicKey = 4;
+}

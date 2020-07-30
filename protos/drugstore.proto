@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "prescript.proto";
+
+package bc;
+
+message drugStoreAccount {
+    string publicKey = 1;
+    repeated string label = 2;
+    repeated Prescript recievedPrescripts = 16;
+}
+
+message storeAccount_Container {
+    repeated drugStoreAccount entries = 1;
+}

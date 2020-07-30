@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package bc;
+
+
+message Prescript{
+    string index = 4;
+    string hash = 1;
+    string patPublicKey = 2; 
+    string docPublicKey = 3;
+}
+
+
+// message Prescription_Action {
+//     string action = 100;
+
+//     //define sender and reciever of prescript
+//     string recieverPpublicKey = 1; 
+//     string senderPublicKey = 2; /*reserve 1 to 15 for higher priority fields*/
+
+//     oneof options {
+//     recievePrescript recievePrescription = 200;
+//     sendPrescript sendPrescription = 201; 
+//     }
+// }
+
+// message recievePrescript {
+//     string LinkToLocalSystem = 1;
+//     string recieverPublicKey = 2;
+//     string senderPublicKey = 3;
+// }
+
+// message sendPrescript {
+//     string senderPublicKey = 2;
+//     string recieverPublicKey = 3;
+//     string linkToLocalSystem = 1;
+// }
+
+
+
+

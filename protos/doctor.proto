@@ -1,0 +1,14 @@
+syntax = "proto3";
+import "prescript.proto";
+
+package bc;
+
+message doctorAccount {
+    string publicKey = 1;
+    repeated string label = 2;
+    repeated Prescript sentPrescripts = 16;
+}
+
+message DoctorAccount_Container {
+    repeated doctorAccount entries = 1;
+}
